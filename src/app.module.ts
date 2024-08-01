@@ -8,7 +8,7 @@ import { AppController } from './app.controller';
 @Module({
   imports: [
     ConfigModule.forRoot(),
-    MongooseModule.forRoot(process.env.DATABASE_URL),
+    MongooseModule.forRoot(process.env.MONGODB_URI),
     CarsModule,
   ],
   controllers: [AppController],

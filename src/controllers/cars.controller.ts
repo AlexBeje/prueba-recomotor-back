@@ -1,5 +1,5 @@
 import { Controller, Get } from '@nestjs/common';
-import { CarsService } from 'src/services/cars.services';
+import { CarsService } from '../services/cars.services';
 
 @Controller('cars')
 export class CarsController {

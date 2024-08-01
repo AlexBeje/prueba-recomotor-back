@@ -1,8 +1,8 @@
 import { Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
-import { CarsController } from 'src/controllers/cars.controller';
-import { Cars, CarsSchema } from 'src/schemas/cars.schema';
-import { CarsService } from 'src/services/cars.services';
+import { CarsController } from '../controllers/cars.controller';
+import { Cars, CarsSchema } from '../schemas/cars.schema';
+import { CarsService } from '../services/cars.services';
 
 @Module({
   imports: [

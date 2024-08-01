@@ -6,9 +6,7 @@ import { ConfigModule } from '@nestjs/config';
 @Module({
   imports: [
     ConfigModule.forRoot(),
-    MongooseModule.forRoot(
-      `mongodb+srv://${process.env.DATABASE_USER_NAME}:${process.env.DATABASE_PASSWORD}@database.owocrus.mongodb.net/?retryWrites=true&w=majority&appName=database`,
-    ),
+    MongooseModule.forRoot(process.env.DATABASE_URL),
     CarsModule,
   ],
   providers: [CarsModule],

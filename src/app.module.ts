@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
-import { CarsModule } from './modules/Cars.module';
+import { CarsModule } from './modules/cars.module';
 import { ConfigModule } from '@nestjs/config';
 
 @Module({

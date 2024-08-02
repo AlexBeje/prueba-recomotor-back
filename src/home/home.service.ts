@@ -9,6 +9,7 @@ export class HomeService {
           font-family: Roboto, sans-serif;
         }
       </style>
+      test
       <h1>Available endpoints:</h1>
       <ul>
         <li><strong>/cars</strong> - Get all cars from the database <strong>[GET]</strong></li>

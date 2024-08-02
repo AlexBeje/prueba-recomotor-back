@@ -7,7 +7,7 @@ import { Cars } from './cars.schema';
 export class CarsService {
   constructor(@InjectModel(Cars.name) private carsModel: Model<Cars>) {}
 
-  getAllCars() {
+  getCars() {
     return this.carsModel.find();
   }
 }

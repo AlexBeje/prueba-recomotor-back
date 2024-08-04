@@ -35,13 +35,12 @@ export class UsersController {
       !Array.isArray(updateUser.favorites) ||
       updateUser.favorites.some(
         (favorite) =>
-          typeof favorite.id !== 'number' ||
           typeof favorite.brand !== 'string' ||
           typeof favorite.model !== 'string',
       )
     ) {
       throw new HttpException(
-        `Favorites should be an array of objects with id, brand and model, ${updateUser.favorites}`,
+        `Favorites should be an array of objects with brand and model, ${updateUser.favorites}`,
         400,
       );
     }
